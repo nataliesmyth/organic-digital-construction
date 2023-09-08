@@ -7,19 +7,78 @@
 }
 
 body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.hero {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    font-family: 'Open Sans', sans-serif;
-    margin: 2em auto;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    color: #FFF;
+    font-weight: 300;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(images/pexels-tyler-lastovich-808465.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    filter: brightness(90%);
 }
 
 h1 {
     padding-block-end: .5em;
 }
 
+.hero-title {
+    font-size: 3em;
+}
+
+.hero-content {
+    position: relative;
+    text-align: center;
+}
+
+.hero-btn {
+    border-radius: 100px;
+    padding: .75em 1.5em;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
 p {
     font-weight: bold;
     padding-block-start: .5em;
+}
+
+.nav {
+    display: none;
+}
+
+.main > * + * {
+    .nav {
+        display: block;
+        z-index: 10;
+    }
+    /* background-color: red; */
+    width: 100vh;
+    height: 100vh;
+}
+
+.section {
+    border: 5px solid coral;
 }
