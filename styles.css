@@ -51,6 +51,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
+    color: var(--clr-black)
 }
 
 .hero {
@@ -80,9 +81,13 @@ body {
 }
 
 h1 {
-    color: #4D4A4A;
+    color: var(--clr-black);
     padding-block: .5em;
     font-size: 2.75rem
+}
+
+h2 {
+    color: var(--clr-black);
 }
 
 .hero-content {
@@ -137,16 +142,20 @@ p {
     justify-content: space-around;
 }
 
+.nav__logo {
+    display: none;
+}
+
 .nav__link {
-    font-weight: 300;
+    font-weight: 600;
     text-transform: uppercase;
     font-size: .75rem;
-    /* padding-inline: 1em; */
+    padding-inline: 1em;
 }
 
 .section {
     margin: 2em auto;
-    padding-block: 6em;
+    padding-block-start: 6em;
     padding-inline: 2em;
     border: 3px solid coral;
     /* height: 100vh; */
@@ -166,6 +175,10 @@ p {
     font-weight: 300;
 }
 
+.section__text * + * {
+    padding-block-start: 2em;
+}
+
 .footer {
     text-align: center;
     padding-block-end: 2em;
@@ -180,11 +193,27 @@ p {
         width: 75%;
     }
 
-    .section__text * + * {
-        padding-block-start: 2em;
-    }
 
     .hero-btn {
         font-size: 1rem;
+    }
+}
+
+@media (min-width: 1000px) {
+    .section__text {
+        width: 50%;
+    }
+
+    .nav {
+        justify-content: space-between;
+    }
+
+    .nav__logo {
+        display: flex;
+    }
+
+    .nav__link {
+        padding-inline: 2em;
+        font-weight: 600;
     }
 }
