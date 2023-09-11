@@ -103,8 +103,9 @@ h2 {
     /* font-weight: 300; */
     color: var(--clr-black);
     /* border: 1px solid var(--clr-black); */
-    background-color: #FFDFDF;
+    background-color: #F8E3CB;
     font-size: .75rem;
+    opacity: .75;
 }
 
 .hero-btn > a {
@@ -167,6 +168,7 @@ p {
 
 .section__title {
     padding-inline: 2em;
+    font-size: 2rem;
     text-align: center;
 }
 
@@ -201,12 +203,13 @@ p {
 
 @media (min-width: 1000px) {
     .section__text {
-        width: 50%;
+        width: 40%;
+        padding-inline-start: 8em;
     }
 
-    .nav {
-        justify-content: space-between;
-    }
+    /* .nav {
+        justify-content: space-around;
+    } */
 
     .nav__logo {
         display: flex;
