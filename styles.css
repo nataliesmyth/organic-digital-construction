@@ -119,6 +119,12 @@ h2 {
     max-width: 1128px;
 }
 
+.flex {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
 a {
     text-decoration: none;
     color: var(--clr-black);
@@ -160,6 +166,8 @@ p {
     padding-inline: 2em;
     border: 3px solid coral;
     /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
 }
 
 .section__about {
@@ -175,11 +183,14 @@ p {
 .section__text {
     padding: 2em;
     font-weight: 300;
+    margin: auto;
 }
 
 .section__text * + * {
     padding-block-start: 2em;
 }
+
+
 
 .footer {
     text-align: center;
@@ -204,7 +215,6 @@ p {
 @media (min-width: 1000px) {
     .section__text {
         width: 40%;
-        padding-inline-start: 8em;
     }
 
     /* .nav {
@@ -218,5 +228,9 @@ p {
     .nav__link {
         padding-inline: 2em;
         font-weight: 600;
+    }
+
+    .section__img--abt > img{
+        height: 25%;
     }
 }
