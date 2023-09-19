@@ -189,6 +189,11 @@ p {
     padding-block-start: 2em;
 }
 
+.section__img--pdf {
+    display: flex;
+    justify-content: center;
+}
+
 .footer {
     text-align: center;
     padding-block-end: 2em;
