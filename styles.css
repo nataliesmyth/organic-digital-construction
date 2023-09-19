@@ -194,6 +194,12 @@ p {
     justify-content: center;
 }
 
+.section__mytime {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .footer {
     text-align: center;
     padding-block-end: 2em;
