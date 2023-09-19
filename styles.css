@@ -194,6 +194,25 @@ p {
     justify-content: center;
 }
 
+.section__film {
+    padding-block-end: 1em;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.section__film,
 .section__mytime {
     flex-direction: column;
     justify-content: center;
