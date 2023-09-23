@@ -284,6 +284,14 @@ p {
     display: none;
 }
 
+.section__film {
+    margin-inline: 2em;
+}
+
+.film-img {
+    max-width: 59.375rem;
+}
+
 .footer {
     text-align: center;
     padding-block-end: 2em;
