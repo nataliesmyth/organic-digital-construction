@@ -147,7 +147,7 @@ p {
     position: fixed;
     background-color: #FFF;
     color: #000;
-    padding-block: 1em 0;
+    padding-block: 1em;
     width: 100%;
     font-size: 1rem;
     display: flex;
@@ -191,7 +191,7 @@ p {
 }
 
 .section__title {
-    padding: 2em;
+    padding: .5em;
     font-size: 2rem;
     text-align: center;
 }
