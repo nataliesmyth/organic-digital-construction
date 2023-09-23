@@ -48,7 +48,13 @@
     isolation: isolate;
   }
 
+html {
+    scroll-padding-top: 84px; /* Replace with your fixed navbar height */
+
+}
+
 body {
+    /* margin: 44px auto; */
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     color: var(--clr-black)
@@ -322,6 +328,8 @@ p {
     .section__text {
         width: 40%;
     }
+
+    
 
     .nav {
         display: flex;
